@@ -1,0 +1,15 @@
+[Unit]
+Description=Doubao streaming voice input
+After=dbus.socket
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/uv run --script %h/.local/share/doubao-voice-input/service.py
+Environment=PYTHONUNBUFFERED=1
+Restart=always
+RestartSec=2
+TimeoutStopSec=8
+
+[Install]
+WantedBy=default.target

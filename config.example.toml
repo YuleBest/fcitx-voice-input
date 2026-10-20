@@ -1,0 +1,13 @@
+api_key = ""
+resource_id = "volc.seedasr.sauc.duration"
+endpoint = "wss://openspeech.bytedance.com/api/v3/sauc/bigmodel_async"
+
+# Fcitx calls the Windows/Super key "Super".
+hotkey = "Super+space"
+
+# Leave empty to use the current PipeWire default source.
+source = ""
+
+# Optional recognition tuning.
+enable_ddc = false
+end_window_size = 800
